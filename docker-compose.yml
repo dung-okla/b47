@@ -1,0 +1,11 @@
+services:
+  web:
+    container_name: f8-47
+    image: f8-47
+    volumes:
+      - "./web:/app/web"
+
+    ports:
+      - "3000:3000"
+
+    command:  ["npm","run","dev"]
